@@ -121,7 +121,7 @@ Du kannst sie beliebig benennen, ich nenne sie im Tutorial einfach "`move`".
 ![Erstelle Animation](/Godot-Parkour-Guides//moving-platform/create-animation.png)
 
 Ändere die Länge der Animation nach belieben.
-Bedenke hierbei, dass eine größere Länge einen langsamere Platform
+Bedenke hierbei, dass eine größere Länge eine langsamere Platform
 bedeutet.
 Auch musst du die Länge der Animation anpassen, wenn die Platform
 eine sehr weite Strecke hinter sich legen soll.
@@ -129,7 +129,7 @@ eine sehr weite Strecke hinter sich legen soll.
 ![Ändere die Länge](/Godot-Parkour-Guides//moving-platform/animation-duration.png)
 
 Während der Animations-Tab im Editor offen ist, zeigt sich hinter
-jeder `Property` im Inspektor ein Schlüssen-Symbol.
+jeder `Property` im Inspektor ein Schlüssel-Symbol.
 Ein **Schlüssel-Symbol** bedeutet, dass der Wert **"Animiert"** werden kann.
 
 Wir wollen unsere Platform bewegen, also müssen wir die Position
@@ -183,7 +183,7 @@ _Aber_ wenn du das Spiel startest bewegt sich gar nichts.
 Du musst die Animation starten und das geht (wie ich getestet habe)
 nur mit ein wenig Code.
 
-_hab gelogen, müssen doch Code schreiben_
+_Zu meiner Aussage vorher: Hab gelogen, müssen doch Code schreiben_
 
 Gebe der Platform ein Skript, indem du das Platform-Node auswählst
 und oben auf das **Skript-Hinzufügen-Symbol** klickst.
