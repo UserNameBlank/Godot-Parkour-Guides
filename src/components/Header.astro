@@ -1,6 +1,6 @@
 ---
 import Link from "@components/Links.astro";
-import { SITE_TITLE, HeaderLinks, DARK_THEME, LIGHT_THEME} from "@consts";
+import { SITE_TITLE, HeaderLinks, DARK_THEME, LIGHT_THEME } from "@consts";
 ---
 
 <header class="z-50 flex w-full flex-wrap py-7 md:flex-nowrap md:justify-start">
@@ -11,8 +11,8 @@ import { SITE_TITLE, HeaderLinks, DARK_THEME, LIGHT_THEME} from "@consts";
     <div class="">
       <a
         class="flex-none text-xl font-semibold"
-        href="/"
-        aria-label="Astromelody"
+        href="/Godot-Parkour-Guides/"
+        aria-label="Godot Parkour Guides"
       >
         {SITE_TITLE}
       </a>
@@ -21,8 +21,8 @@ import { SITE_TITLE, HeaderLinks, DARK_THEME, LIGHT_THEME} from "@consts";
     <div class="ms-auto flex items-center gap-x-2 py-1">
       <a
         class="inline-flex items-center gap-x-2 rounded-xl border border-transparent px-3 py-2 text-sm font-medium disabled:pointer-events-none disabled:opacity-50"
-        href="/search/"
-        href="/search/"
+        href="/Godot-Parkour-Guides/search/"
+        href="/Godot-Parkour-Guides/search/"
       >
         <i class="icon-base i-tabler-search"></i>
       </a>
@@ -53,7 +53,12 @@ import { SITE_TITLE, HeaderLinks, DARK_THEME, LIGHT_THEME} from "@consts";
 
       <label class="swap swap-rotate rounded-xl px-3 py-2 text-sm">
         <!-- this hidden checkbox controls the state -->
-        <input type="checkbox" class="theme-controller" data-unchecked-value={LIGHT_THEME} value={DARK_THEME} />
+        <input
+          type="checkbox"
+          class="theme-controller"
+          data-unchecked-value={LIGHT_THEME}
+          value={DARK_THEME}
+        />
         <!-- sun icon -->
         <i class="icon-base swap-off i-tabler-sun-filled"></i>
         <!-- moon icon -->
@@ -65,7 +70,9 @@ import { SITE_TITLE, HeaderLinks, DARK_THEME, LIGHT_THEME} from "@consts";
 
 <!-- Save theme to localStorage -->
 <script is:inline>
-  const lightTheme =  document.querySelector('.theme-controller')?.getAttribute('data-unchecked-value');
+  const lightTheme = document
+    .querySelector(".theme-controller")
+    ?.getAttribute("data-unchecked-value");
   // ☝️ This script prevent the FART effect.
   if (localStorage.getItem("theme") === null) {
     document.documentElement.setAttribute("data-theme", lightTheme);
@@ -82,8 +89,10 @@ import { SITE_TITLE, HeaderLinks, DARK_THEME, LIGHT_THEME} from "@consts";
     document.querySelector(".theme-controller");
 
   themeController?.addEventListener("change", () => {
-    const t = themeController?.checked ? themeController?.value : themeController?.getAttribute('data-unchecked-value');
-    localStorage.setItem("theme", t ?? '');
+    const t = themeController?.checked
+      ? themeController?.value
+      : themeController?.getAttribute("data-unchecked-value");
+    localStorage.setItem("theme", t ?? "");
   });
   // 👆 you could import the CDN directly instead of these two lines
 </script>

@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import HeroCard from "@components/HeroCard.astro";
 import Card from "@components/CommonCard.astro";
-import Pagination from "@components/Pagination.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@consts";
 
 const allPosts = await getCollection("posts");
