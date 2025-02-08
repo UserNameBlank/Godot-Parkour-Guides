@@ -2,7 +2,7 @@
 title: "Tutorial: Bewegende Platform"
 pubDate: 2025-02-07
 description: Eine einfache sich bewegende Platform
-cover: ../../../public/godot-editor.png
+cover: ../../../public/moving-platform/platform-image.png
 coverAlt: Der Godot Editor
 tags:
   - Godot
