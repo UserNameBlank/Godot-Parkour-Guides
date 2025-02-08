@@ -27,16 +27,14 @@ export function getCategoryMetadata(category: string) {
 }
 
 // Header Links, src/components/Header.astro
-export const HeaderLinks = [
-  { href: "/category/One/1/", title: "Eins" },
-  { href: "/category/Two/1/", title: "Zwei" },
-  { href: "/category/Three/1/", title: "Drei" },
-];
+// export const HeaderLinks = [
+//   { href: "/category/One/1/", title: "Eins" },
+//   { href: "/category/Two/1/", title: "Zwei" },
+//   { href: "/category/Three/1/", title: "Drei" },
+// ];
 
 // Footer Links, src/components/Footer.astro
-export const FooterLinks = [
-  { href: "/tags/", title: "Tags" },
-];
+export const FooterLinks = [{ href: "/Godot-Parkour-Guides/tags/", title: "Tags" }];
 
 // Social Links, src/components/Footer.astro
 export const SocialLinks = [
