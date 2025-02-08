@@ -237,5 +237,5 @@ Das war's. Alles sollte nun funktionieren.
 
 ---
 
-_Wie ich hätte von Anfang an ein `AnimatableBody3D` erstellen können?  
+_Wie? Ich hätte von Anfang an ein `AnimatableBody3D` erstellen können?  
 Ich muss doch meinen Bildungsauftrag erfüllen!!_
