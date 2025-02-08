@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import PostCard from "@components/CommonCard.astro";
-import Pagination from "@components/Pagination.astro";
 import { getTagMetadata } from "@consts";
 
 export async function getStaticPaths() {
@@ -20,19 +19,14 @@ export async function getStaticPaths() {
         new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
     );
 
-    const pageSize = 12;
-    const totalPages = Math.ceil(filteredPosts.length / pageSize);
-
-    return Array.from({ length: totalPages }, (_, index) => ({
-      params: { tag, page: (index + 1).toString() },
+    return {
+      params: { tag },
       props: {
         page: {
-          data: filteredPosts.slice(index * pageSize, (index + 1) * pageSize),
-          currentPage: index + 1,
-          lastPage: totalPages,
+          data: filteredPosts,
         },
       },
-    }));
+    };
   });
 }
 
@@ -45,17 +39,4 @@ const { title, description } = getTagMetadata(params.tag);
   <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
     {page.data.map((post) => <PostCard post={post} />)}
   </div>
-
-  <Pagination
-    currentPage={page.currentPage}
-    lastPage={page.lastPage}
-    urlPrev={page.currentPage > 1
-      ? `/tags/${params.tag}/${page.currentPage - 1}`
-      : null}
-    urlNext={page.currentPage < page.lastPage
-      ? `/tags/${params.tag}/${page.currentPage + 1}`
-      : null}
-    basePath={`/tags/${params.tag}`}
-    maxDisplayedPages={5}
-  />
 </BaseLayout>
