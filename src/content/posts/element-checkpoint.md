@@ -50,7 +50,9 @@ Du kannst diese zur Einstellung der Größe nutzen.
 ![CollisionShape3D Größe](/Godot-Parkour-Guides/checkpoint/cs-resize.png)
 
 Um zu Kontrollieren, an welcher Stelle auf der Platform der Spieler
-respawnt, füge dem Checkpoint ein sogenanntes `Marker3D` Node hinzu.
+respawnt, füge dem Checkpoint ein sogenanntes `Marker3D` Node hinzu.  
+_(Ein Marker3D ist eigentlich nur ein Node3D, aber man benutzt
+es generell um Positionen zu markieren)_
 
 ![Marker3D](/Godot-Parkour-Guides/checkpoint/marker-node.png)
 
