@@ -29,7 +29,7 @@ const allPosts = await getCollection("posts");
     </div>
 
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {allPosts.slice(4).map((post) => <Card post={post} />)}
+      {allPosts.slice(3).map((post) => <Card post={post} />)}
     </div>
   </div>
 
