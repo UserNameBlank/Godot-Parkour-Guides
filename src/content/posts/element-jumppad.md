@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: JumpPad"
 pubDate: 2025-02-09
-description: Eine JumpPad
+description: Ein JumpPad
 cover: ../../../public/jumppad/jumppad-image.png
 coverAlt: Das JumpPad
 tags:
