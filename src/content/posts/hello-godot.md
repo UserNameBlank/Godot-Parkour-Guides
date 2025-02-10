@@ -9,3 +9,7 @@ tags:
   - Basics
 author: Hauke
 ---
+
+Der Godot-Editor:
+
+![Godot Editor](/Godot-Parkour-Guides//editor-colored.png)
