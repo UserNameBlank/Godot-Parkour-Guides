@@ -12,7 +12,7 @@ author: Hauke
 
 Dieses Tutorial zeigt wie man eine sich bewegende Platform in Godot erstellt.
 
-<video style="pointer-events: none;" autoplay loop muted src="/Godot-Parkour-Guides/moving-platform.webm" controls></video>
+<video  autoplay loop muted src="/Godot-Parkour-Guides/moving-platform.webm" controls></video>
 
 ---
 
@@ -233,9 +233,4 @@ _Get it? Es hat "Animatable" im Namen._
 
 Das war's. Alles sollte nun funktionieren.
 
-<video src="/Godot-Parkour-Guides/moving-platform/platform-moving.mp4" autoplay loop></video>
-
----
-
-_Wie? Ich hätte von Anfang an ein `AnimatableBody3D` erstellen können?  
-Ich muss doch meinen Bildungsauftrag erfüllen!!_
+<video src="/Godot-Parkour-Guides/moving-platform/platform-moving.mp4" autoplay loop muted controls></video>

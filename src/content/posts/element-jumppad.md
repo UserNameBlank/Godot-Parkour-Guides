@@ -10,7 +10,7 @@ tags:
 author: Hauke
 ---
 
-<video style="pointer-events: none;" autoplay loop muted src="/Godot-Parkour-Guides/jumppad/jumpad-working.mp4" controls></video>
+<video  autoplay loop muted src="/Godot-Parkour-Guides/jumppad/jumpad-working.mp4" controls></video>
 
 In diesem Tutorial erstelle ich ein JumpPad.
 _(Ein JumpPad ist eine kleine Platform, die dich in die Höhe
