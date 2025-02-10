@@ -1,5 +1,5 @@
 ---
-title: "Tipps: Schnelles Levelbauen"
+title: "Tipp: Schnelles Levelbauen"
 pubDate: 2025-02-10
 description: Wie man mit CSG schnell Level bauen kann
 cover: ../../../public/levelbuilding/finished-level.png
