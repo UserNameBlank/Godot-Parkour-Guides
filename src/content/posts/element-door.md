@@ -140,8 +140,11 @@ Damit der Knopf auch ein wenig Feedback gibt,
 
 ![Knopf Code](/Godot-Parkour-Guides//door/btn-code2.png)
 
-Mit dem `$CSGBox3D` nehmen wir uns die MeshInstance3D und
-besorgen uns das active Material mit der `get_active_material` Funktion.  
+Mit dem `$CSGBox3D` nehmen wir uns die MeshInstance3D als Variable.  
+_(Sie heißt noch "CSGBox3D",
+weil sie nach der Konvertierung ihren alten Namen behält. Du kannst den natürlich
+ändern)_  
+Direkt danach besorgen wir uns das active Material mit der `get_active_material` Funktion.  
 Die Funktion nimmt noch einen Index. Da das Mesh nur ein Material hat,
 und Computer ab 0 anfangen zu zählen, geben wir 0 ein.  
 In dem Material ändern wir die Albedo Farbe und die Emission auf Grün.
