@@ -8,6 +8,7 @@ tags:
   - Godot
   - "Tipps & Tricks"
 author: Hauke
+index: 3
 ---
 
 Level mit vielen StaticBodies, MeshInstances und CollisionShapes zu

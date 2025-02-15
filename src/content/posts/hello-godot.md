@@ -8,6 +8,7 @@ tags:
   - Godot
   - Basics
 author: Hauke
+index: 1
 ---
 
 Der Godot-Editor:

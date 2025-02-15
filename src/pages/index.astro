@@ -6,17 +6,12 @@ import Card from "@components/CommonCard.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "@consts";
 
 const allPosts = await getCollection("posts");
-allPosts.sort(
-  (a, b) =>
-    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
-);
-allPosts.reverse();
-
-// const postsPerPage = 15;
-// const firstPagePosts = allPosts.slice(0, postsPerPage);
-// const totalPages = Math.ceil(allPosts.length / postsPerPage);
-
-// const basePath = "/page/";
+// allPosts.sort(
+//   (a, b) =>
+//     new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
+// );
+// allPosts.reverse();
+allPosts.sort((a, b) => a.data.index - b.data.index)
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
@@ -33,13 +28,4 @@ allPosts.reverse();
       {allPosts.slice(3).map((post) => <Card post={post} />)}
     </div>
   </div>
-
-  <!-- <Pagination -->
-  <!--   currentPage={1} -->
-  <!--   lastPage={totalPages} -->
-  <!--   urlPrev={null} -->
-  <!--   urlNext={totalPages > 1 ? `/page/2` : null} -->
-  <!--   basePath={basePath} -->
-  <!--   maxDisplayedPages={5} -->
-  <!-- /> -->
 </BaseLayout>

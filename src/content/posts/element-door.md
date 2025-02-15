@@ -8,6 +8,7 @@ tags:
   - Godot
   - Tutorial
 author: Hauke
+index: 7
 ---
 
 ### Hinweis

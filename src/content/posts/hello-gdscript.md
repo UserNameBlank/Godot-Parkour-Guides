@@ -10,6 +10,7 @@ tags:
   - Programmieren
   - Basics
 title: GDScript
+index: 2
 ---
 
 GDScript ist die Programmiersprache mit der du in Godot coole Sachen machen kannst.

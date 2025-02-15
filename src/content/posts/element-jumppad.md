@@ -8,6 +8,7 @@ tags:
   - Godot
   - Tutorial
 author: Hauke
+index: 5
 ---
 
 <video  autoplay loop muted src="/Godot-Parkour-Guides/jumppad/jumpad-working.mp4" controls></video>

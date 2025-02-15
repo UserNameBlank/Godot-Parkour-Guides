@@ -8,6 +8,7 @@ tags:
   - Godot
   - Tutorial
 author: Hauke
+index: 4
 ---
 
 Dieses Tutorial zeigt wie man eine sich bewegende Platform in Godot erstellt.
