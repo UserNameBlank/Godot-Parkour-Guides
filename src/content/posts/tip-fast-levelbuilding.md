@@ -9,6 +9,7 @@ tags:
   - "Tipps & Tricks"
 author: Hauke
 index: 3
+nextPost: element-moving-platform
 ---
 
 Level mit vielen StaticBodies, MeshInstances und CollisionShapes zu

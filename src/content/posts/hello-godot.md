@@ -9,6 +9,7 @@ tags:
   - Basics
 author: Hauke
 index: 1
+nextPost: hello-gdscript
 ---
 
 Der Godot-Editor:

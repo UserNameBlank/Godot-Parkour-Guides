@@ -9,6 +9,7 @@ tags:
   - Tutorial
 author: Hauke
 index: 5
+nextPost: element-checkpoint
 ---
 
 <video  autoplay loop muted src="/Godot-Parkour-Guides/jumppad/jumpad-working.mp4" controls></video>

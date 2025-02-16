@@ -4,13 +4,13 @@ cover: ../../../public/gdscript-picture.png
 coverAlt: Kompliziertes GDScript
 description: GDScript auf einen Blick
 pubDate: 2024-02-06 00:00:00
-slug: gdscript-lernen
 tags:
   - Godot
   - Programmieren
   - Basics
 title: GDScript
 index: 2
+nextPost: tip-fast-levelbuilding
 ---
 
 GDScript ist die Programmiersprache mit der du in Godot coole Sachen machen kannst.

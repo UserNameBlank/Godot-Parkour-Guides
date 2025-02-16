@@ -9,6 +9,7 @@ tags:
   - Tutorial
 author: Hauke
 index: 4
+nextPost: element-jumppad
 ---
 
 Dieses Tutorial zeigt wie man eine sich bewegende Platform in Godot erstellt.

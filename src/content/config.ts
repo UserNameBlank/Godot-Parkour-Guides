@@ -13,6 +13,7 @@ const posts = defineCollection({
       tags: z.array(z.string()),
       author: z.string(),
       index: z.number(),
+      nextPost: z.optional(z.string()),
     }),
 });
 

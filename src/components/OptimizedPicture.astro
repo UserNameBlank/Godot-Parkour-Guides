@@ -1,5 +1,5 @@
 ---
-import { Picture } from "astro:assets";
+import { Image } from "astro:assets";
 
 interface Props {
   src: any;
@@ -19,19 +19,16 @@ const {
            (max-width: 720px) 700px, 
            (max-width: 1600px) 980px, 
            1960px`,
-  formats = ["avif"],
-  fallbackFormat = "avif",
   class: className = "mx-auto w-full max-w-full object-cover",
 } = Astro.props;
 ---
 
-<Picture
+<Image
   src={src}
   alt={alt}
   widths={widths}
+  loading="eager"
   sizes={sizes}
-  formats={formats}
-  fallbackFormat={fallbackFormat}
   class={className}
   inferSize
 />
