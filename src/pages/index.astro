@@ -11,7 +11,7 @@ const allPosts = await getCollection("posts");
 //     new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 // );
 // allPosts.reverse();
-allPosts.sort((a, b) => a.data.index - b.data.index)
+allPosts.sort((a, b) => a.data.index - b.data.index);
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>

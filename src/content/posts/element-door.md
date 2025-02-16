@@ -76,6 +76,15 @@ in ein Mesh um.
 
 ![Csg to Mesh](/Godot-Parkour-Guides//door/csg-to-mesh.png)
 
+_**Vorsicht:**  
+Wenn du ein CSG in ein Mesh verwandelst,
+heißt das Node immer noch "CSGBox3D",
+weil der Typ unabhängig vom Namen ist
+und der Name beibehalten wird.
+Lass dich nicht beirren und nenne es
+um! Ich hab's jetzt nicht gemacht, weil
+diese Nachricht Post-Release eingefügt wurde._
+
 Erstelle jetzt ein leicht größeres Mesh aus dem generierten Mesh,
 indem du oben nach **Umriss-Mesh erzeugen** suchst.
 
